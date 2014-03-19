@@ -1,5 +1,7 @@
 " Use the Molokai theme (originally created for TextMate by Wimer Hazenberg)
-colorscheme molokai
+" colorscheme molokai
+set background=dark
+colorscheme solarized
 
 " Make Vim more useful
 set nocompatible
@@ -19,9 +21,9 @@ set gdefault
 set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
-" Don’t add empty newlines at the end of files
-set binary
-set noeol
+" add empty newlines at the end of files
+"set binary
+set eol
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
@@ -40,9 +42,14 @@ set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
-set cursorline
+" set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
+set ignorecase            " Make searches case-insensitive.
+set autoindent            " auto-indent
+set softtabstop=4         " unify
+set shiftwidth=4          " indent/outdent by 4 columns
+set expandtab             " use spaces instead of tabs
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
