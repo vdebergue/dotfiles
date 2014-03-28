@@ -52,7 +52,7 @@ set shiftwidth=4          " indent/outdent by 4 columns
 set expandtab             " use spaces instead of tabs
 " Show “invisible” characters
 "set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
+"set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
