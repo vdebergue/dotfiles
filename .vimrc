@@ -1,7 +1,7 @@
 " Use the Molokai theme (originally created for TextMate by Wimer Hazenberg)
 " colorscheme molokai
 set background=dark
-colorscheme solarized
+colorscheme molokai
 
 " Make Vim more useful
 set nocompatible
@@ -51,7 +51,7 @@ set softtabstop=4         " unify
 set shiftwidth=4          " indent/outdent by 4 columns
 set expandtab             " use spaces instead of tabs
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
 " Highlight searches
 set hlsearch
