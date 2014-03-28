@@ -1,3 +1,11 @@
+# My Installation
+
+```bash
+git clone --recursive git@github.com:vdebergue/dotfiles.git && cd dotfiles && source bootstrap.sh
+```
+
+---------------------
+
 # Mathias’s dotfiles
 
 ## Installation
