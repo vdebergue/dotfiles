@@ -1,6 +1,7 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"font_size": 14,
+	"find_selected_text": true,
 	"ignored_packages":
 	[
 		"Vintage"
