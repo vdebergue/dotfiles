@@ -37,7 +37,7 @@ ZSH_THEME="blinks"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to the command execution time stamp shown 
+# Uncomment following line if you want to the command execution time stamp shown
 # in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
@@ -74,3 +74,11 @@ export EDITOR='vim'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+export PATH="$PATH:$HOME/nir/"
+
+# git function to create branch on server
+gbr () {
+  git push origin master:$1
+  git checkout $1
+  print "Created branch $1 on server from master"
+}
