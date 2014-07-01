@@ -59,7 +59,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -82,3 +82,6 @@ gbr () {
   git checkout $1
   print "Created branch $1 on server from master"
 }
+
+export JAVA_OPTS="-Xms1024m -Xmx2048m -XX:MaxPermSize=2048m -Dfile.encoding=UTF-8 -Dstringchararrayaccessor.disabled=true"
+
