@@ -12,3 +12,14 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Ruby files
+Gemfile
+Gemfile.lock
+
+#idea
+.idea/
+.idea_modules/
+
+/target
+npm-debug.log

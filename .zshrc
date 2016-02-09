@@ -45,7 +45,7 @@ ZSH_THEME="blinks"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git z scala sbt brew)
+plugins=(git scala sbt brew brew-cast colorize)
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -59,7 +59,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -73,15 +73,16 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-export PATH="$PATH:$HOME/nir/"
 
 # git function to create branch on server
-gbr () {
-  git push origin master:$1
-  git checkout $1
-  print "Created branch $1 on server from master"
+function gbranch () {
+  print "Creating new branch $2 from $1..."
+  git push origin $1:$2
+  git checkout $2
+  print "Created branch $2 on server from $1"
 }
 
-export JAVA_OPTS="-Xms1024m -Xmx2048m -XX:MaxPermSize=2048m -Dfile.encoding=UTF-8 -Dstringchararrayaccessor.disabled=true"
+export JAVA_OPTS="-Djava.awt.headless=true -Xms2048m -Xmx2048m -Dfile.encoding=UTF-8 -Dstringchararrayaccessor.disabled=true"
+export SBT_OPTS="$SBT_OPTS -Dsbt.jse.engineType=Node"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
