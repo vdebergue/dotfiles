@@ -1,0 +1,34 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"Babel",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Git",
+		"GitGutter",
+		"Gutter Color",
+		"Keymaps",
+		"LESS",
+		"lispindent",
+		"List LESS Variables",
+		"Markdown Extended",
+		"Markdown Preview",
+		"Package Control",
+		"Play 2.0",
+		"Sass",
+		"SideBarEnhancements",
+		"Stylus",
+		"Stylus-Snippets",
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
+		"Theme - Sodarized",
+		"TodoReview",
+		"TrailingSpaces",
+		"TypeScript"
+	]
+}
